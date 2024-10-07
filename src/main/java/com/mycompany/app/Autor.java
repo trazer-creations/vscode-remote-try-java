@@ -2,6 +2,12 @@ package com.mycompany.app;
 
 public class Autor extends Pessoa {
     private String nacionalidade;
+    private Livro[] obrasPublicadas;
+
+    public Autor(String nome, String nacionalidade){
+        super(nome);
+        this.nacionalidade = nacionalidade;
+    }
 
     public String getNacionalidade(){
         return nacionalidade;
@@ -11,7 +17,6 @@ public class Autor extends Pessoa {
         this.nacionalidade = nacionalidade;
     }
 
-    private Livro[] obrasPublicadas;
 
     public Livro[] getObrasPublicadas(){
         return obrasPublicadas;

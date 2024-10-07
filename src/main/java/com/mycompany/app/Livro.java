@@ -6,6 +6,12 @@ public class Livro {
     private String genero;
     private boolean disponivel;
 
+    public Livro(String titulo, Autor autor, String genero, boolean disponivel){
+        this.titulo = titulo;
+        this.autor = autor;
+        this.genero = genero;
+        this.disponivel = disponivel;
+    }
     public String getTitulo(){
         return titulo;
     }
@@ -34,11 +40,13 @@ public class Livro {
         return disponivel;
     }
 
-    public void validarDisponibilidade(){
+    public boolean validarDisponibilidade(){
         if (disponivel){
             System.out.println("O livro está disponível.");
+            return true;
         } else {
             System.out.println("O livro não está disponível.");
+            return false;
         }
     }
 }

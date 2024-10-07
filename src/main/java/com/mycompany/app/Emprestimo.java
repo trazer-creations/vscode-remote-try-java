@@ -8,6 +8,13 @@ public class Emprestimo {
     private Livro livro;
     private Usuario usuario;
 
+    public Emprestimo ( Date dataRetirada, Date dataDevolucao, Livro livro, Usuario usuario){
+        this.dataRetirada = dataRetirada;
+        this.dataDevolucao = dataDevolucao;
+        this.livro = livro;
+        this.usuario = usuario;
+    }
+    
     public Date getDataRetirada(){
         return dataRetirada;
     }
