@@ -1,6 +1,8 @@
 package com.mycompany.app;
 import org.junit.Test;
 
+import com.mycompany.app.Model.*;
+
 import static org.junit.Assert.assertArrayEquals;
 import static org.junit.Assert.assertEquals;
 

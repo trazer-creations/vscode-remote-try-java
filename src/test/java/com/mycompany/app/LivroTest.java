@@ -3,6 +3,8 @@ import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
+import com.mycompany.app.Model.*;
+
 public class LivroTest {
     @Test
     public void testGetTitulo(){

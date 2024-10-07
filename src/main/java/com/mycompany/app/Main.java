@@ -2,6 +2,8 @@ package com.mycompany.app;
 
 import java.util.Date;
 
+import com.mycompany.app.Model.*;
+
 public class Main {
     public static void main(String[] args){
         Autor autor = new Autor("Alysson","Brasileiro");
